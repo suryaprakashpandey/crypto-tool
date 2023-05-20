@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indigenous Crypto Currency Investigation Tool</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>Indigenous Crypto Currency Investigation Tool</h1>
+		<div class="form-section">
+			<h2>Crypto Address Validation</h2>
+			<form>
+				<label for="address">Enter your crypto address:</label><br>
+				<input type="text" id="address" name="address" required><br><br>
+				<input type="submit" value="Validate Address">
+			</form>
+			<div id="address-validation-message"></div>
+		</div>
+		<div class="form-section">
+			<h2>Crypto Address Extraction from Image</h2>
+			<form>
+				<label for="image">Upload an image:</label><br>
+				<input type="file" id="image" name="image" accept="image/*" required><br><br>
+				<input type="submit" value="Extract Address">
+			</form>
+			<div id="address-extraction-message"></div>
+			<div id="extracted-address"></div>
+		</div>
+	</div>
+</body>
+</html>
